@@ -1,0 +1,116 @@
+.feedback_item {
+    display: grid;
+    //background-color: red;
+    height: 200px;
+    width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+
+.feedback_bubble {
+    display: grid;
+    text-decoration: none;
+    background-image: url("/assets/bubble_message.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;  
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.feedback_text {
+    color: var(--help-color);
+    padding-top: 25px;
+    padding-left: 20px;
+    font-weight: 650;
+    width: 180px;
+    height: 90px;
+    vertical-align: top;
+}
+
+.feedback_author {
+    color: var(--help-color);
+    padding-right: 20px;
+    text-align: right;
+    vertical-align: bottom;
+    padding-bottom: 50px;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup_content {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.popup_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup_body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup_content {
+    background-color: var(--back-color);
+    color: var(--help-color);
+    max-width: 70%;
+    padding: 20px;
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100%);
+}
+
+.popup_close {
+    display: grid;
+    text-align: right;
+    vertical-align: top;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.popup_title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.popup_full-text {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.popup_author {
+    padding-top: 15px;
+    text-align: right;
+    vertical-align: bottom;
+    font-style: italic;
+}
