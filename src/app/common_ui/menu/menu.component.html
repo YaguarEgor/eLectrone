@@ -1,21 +1,49 @@
-<body class="app_menu">
+<body class="layout">
+  <body class="app_menu">
+      <div class="dropdown">
+          <img src="/assets/menu_burger.png" alt="" class="nut_dropdown">
+          <div class="noidung_dropdown">
+            <a class="menu-dropdown-item" href="#">
+              О нас</a>
+            <a class="menu-dropdown-item" href="#">
+              Наши преподаватели</a>
+            <a class="menu-dropdown-item" href="#feedback">
+              Отзывы</a>
+            <a class="menu-dropdown-item" href="#footage">
+              Контакты</a>
+          </div>
+      </div>
 
-    
-    <div class="dropdown">
-        <img src="/assets/menu_burger.png" alt="" class="nut_dropdown">
-        <div class="noidung_dropdown">
-          <a class="menu-dropdown-item" href="#">О нас</a>
-          <a class="menu-dropdown-item" href="#">Наши преподаватели</a>
-          <a class="menu-dropdown-item" href="#">Отзывы</a>
-          <a class="menu-dropdown-item" href="#">Контакты</a>
-        </div>
-    </div>
+      
+      <img src="/assets/user.png" alt="" class="menu-icon" 
+        routerLink="/" routerLinkActive="router-link-active" ariaCurrentWhenActive="page">
 
+      <a class="menu-item" href="#">
+        О нас</a>
+
+      <a class="menu-item" href="#">
+        Наши преподаватели</a>
+
+      <a class="menu-item" href="#feedback">
+        Отзывы</a>
+
+      <a class="menu-item" href="#footage">
+        Контакты</a>
+
+      <img src="/assets/user.png" alt="" class="profile-icon" 
+        routerLink="/profile" routerLinkActive="router-link-active" ariaCurrentWhenActive="page">
+      
     
-    <img src="/assets/user.png" alt="" class="menu-icon">
-    <a href="#" class="menu-item">О нас</a>
-    <a href="#" class="menu-item">Наши преподаватели</a>
-    <a href="#" class="menu-item">Отзывы</a>
-    <a href="#" class="menu-item">Контакты</a>
-    <img src="/assets/user.png" alt="" class="profile-icon">
+  </body>
+
+  <router-outlet></router-outlet>
+
+  <div id="footage" class="app_footage">
+    <p class="title">Наши контакты</p>
+    <p class="contacts">+7(985)335-95-74</p>
+    <p class="contacts">lit.online.school&#64;gmail.com</p>
+    
+  </div>
 </body>
+
+

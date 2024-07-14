@@ -1,5 +1,8 @@
 @media  only screen and (min-width: 900px) {
    .app_menu {
+        position: sticky;
+        z-index: 2;
+        top: 0;
         height: 40px;
         background-color: var(--menu-back-color);
         color: var(--primary-color);
@@ -23,6 +26,9 @@
 
 @media only screen and (max-width: 900px) {
     .app_menu {
+        position: sticky;
+        z-index: 2;
+        top: 0;
         height: 40px;
         background-color: var(--menu-back-color);
         color: var(--primary-color);
@@ -87,5 +93,30 @@
     width: 35px;
     justify-self: right;
    
+}
+
+.app_footage {
+
+    background-color: var(--footage-back-color);
+    height: 110px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.app_footage .title {
+    padding-top: 10px;
+    font-size: 25px;
+    justify-self: center;
+    font-weight: 650;
+    color: var(--primary-color);
+}
+
+.app_footage .contacts {
+    font-size: 15px;
+    justify-self: center;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--primary-color);
 }
 
