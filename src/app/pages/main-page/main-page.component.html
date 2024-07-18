@@ -3,11 +3,8 @@
 <img src="/assets/hernya.jpg" alt="" class="her">
 
 <div id="feedbacks" class="wraper">
-    <app-feedback-item></app-feedback-item>
-    <app-feedback-item></app-feedback-item>
-    <app-feedback-item></app-feedback-item>
-    <app-feedback-item></app-feedback-item>
-    <app-feedback-item></app-feedback-item>
-    <app-feedback-item></app-feedback-item>
+  @for (feedback of feedbacks; track feedback.title) {
+    <app-feedback-item [feedback]="feedback"></app-feedback-item>
+  }
 </div>
 

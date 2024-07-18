@@ -1,17 +1,26 @@
-<body class="feedback_item">
+@if (feedback) {
+  <body class="feedback_item">
     <a id="feedback" href="#popup" aria-hidden="true" class="feedback_bubble">
-        <p class="feedback_text">Все было супер! Сайт гавно, но преподы кайфовые</p>
-        <p class="feedback_author">Вася Пупкин</p>
+        <p class="feedback_text">{{ feedback.title }}</p>
+        <p class="feedback_author">{{ feedback.author }}</p>
     </a>
     <div id="popup" class="popup">
         <a href="#header" class="popup_area"></a>
         <div class="popup_body">
             <div class="popup_content">
                 <a href="#header" class="popup_close">X</a>
-                <div class="popup_title">Все было супер! Сайт гавно, но преподы кайфовые</div>
-                <div class="popup_full-text">hbdsjffffffffffffffffffffffffffffffffffffffffff fffffffffffffffffffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffffffffffffffff fffffffffffffffffffffffffffff</div>
-                <div class="popup_author">Вася Пупкин</div> 
+                <div class="popup_title">{{ feedback.title }}</div>
+                <div class="popup_full-text">{{ feedback.all_text }}</div>
+                <div class="popup_author">{{ feedback.author }}</div>
             </div>
         </div>
     </div>
 </body>
+}
+@else {
+  <div>
+    Скоро здесь будет отзыв
+    Это всего лишь ошибка сервера
+  </div>
+}
+
