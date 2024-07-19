@@ -10,4 +10,6 @@ import { Feedback } from '../../data/interfaces/feedback-interface';
 })
 export class FeedbackItemComponent {
   @Input() feedback!: Feedback;
+
+
 }

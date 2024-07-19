@@ -1,12 +1,37 @@
+.main {
+  position: relative;
+}
+
 .wraper {
     background-color: var(--back-color);
     max-height: 300px;
-    padding-top: 10px;  
-    padding-bottom: 10px;  
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
-    overflow-x:scroll;
+    overflow-x: scroll;
 }
 
-.her {
-    width: 100%;
+
+.tagline {
+  position: relative;
+}
+
+
+.tagline_text {
+  padding: 0;
+  color: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 6vw;
+}
+
+.about_us {
+  background-color: var(--back-color);
+}
+
+.about_us .line {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

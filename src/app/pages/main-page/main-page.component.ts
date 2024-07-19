@@ -3,11 +3,12 @@ import { MenuComponent } from '../../common_ui/menu/menu.component';
 import { FeedbackItemComponent } from '../../common_ui/feedback-item/feedback-item.component';
 import { Feedback } from '../../data/interfaces/feedback-interface';
 import { GetFeedbacksService } from '../../data/services/get-feedbacks.service';
+import { JsonPipe } from '@angular/common';
 
 @Component({
   selector: 'app-main-page',
   standalone: true,
-  imports: [MenuComponent, FeedbackItemComponent],
+  imports: [MenuComponent, FeedbackItemComponent, JsonPipe],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss'
 })

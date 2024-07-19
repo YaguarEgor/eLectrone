@@ -1,10 +1,9 @@
-@if (feedback) {
-  <body class="feedback_item">
-    <a id="feedback" href="#popup" aria-hidden="true" class="feedback_bubble">
+<body class="feedback_item">
+    <a id="feedback" href="#{{feedback.id}}" aria-hidden="true" class="feedback_bubble" >
         <p class="feedback_text">{{ feedback.title }}</p>
         <p class="feedback_author">{{ feedback.author }}</p>
     </a>
-    <div id="popup" class="popup">
+    <div [id]="feedback.id" class="popup" >
         <a href="#header" class="popup_area"></a>
         <div class="popup_body">
             <div class="popup_content">
@@ -16,11 +15,4 @@
         </div>
     </div>
 </body>
-}
-@else {
-  <div>
-    Скоро здесь будет отзыв
-    Это всего лишь ошибка сервера
-  </div>
-}
 

@@ -9,7 +9,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         margin-bottom: 0;
-    } 
+    }
 
     .menu-item {
         justify-self: center;
@@ -35,7 +35,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin: 0;
-    } 
+    }
 
     .menu-item {
         display: none;
@@ -54,12 +54,12 @@
         height: 40px;
         width: 40px;
     }
-    
+
     .dropdown {
         position: relative;
         display: inline-block;
     }
-    
+
     .noidung_dropdown {
         display: none;
         position: absolute;
@@ -70,7 +70,7 @@
         text-decoration: none;
         display: grid;
     }
-    
+
     .noidung_dropdown a:hover {background-color: var(--footage-back-color);}
     .dropdown:hover .noidung_dropdown {display: block;}
     .dropdown:hover .nut_dropdown {background-color: var(--menu-back-color);}
@@ -92,7 +92,7 @@
     height: 35px;
     width: 35px;
     justify-self: right;
-   
+
 }
 
 .app_footage {
@@ -119,4 +119,3 @@
     font-style: italic;
     color: var(--primary-color);
 }
-

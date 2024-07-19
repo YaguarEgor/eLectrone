@@ -1,10 +1,24 @@
-<img src="/assets/hernya.jpg" alt="" class="her">
-<img src="/assets/hernya.jpg" alt="" class="her">
-<img src="/assets/hernya.jpg" alt="" class="her">
+<body class="main">
+  <div class="tagline">
+    <img src="/assets/lofi_girl.png" alt="" style="width: 100%; filter: brightness(40%)">
+    <p class="tagline_text">
+      Учитесь&nbsp;вместе&nbsp;с&nbsp;нами
+    </p>
+  </div>
 
-<div id="feedbacks" class="wraper">
-  @for (feedback of feedbacks; track feedback.title) {
-    <app-feedback-item [feedback]="feedback"></app-feedback-item>
-  }
-</div>
 
+  <div class="about_us">
+    <div class="line">
+      <img src="/assets/img_girl_1.png" alt="">
+      <p>Hi</p>
+    </div>
+  </div>
+
+
+
+  <div id="feedbacks" class="wraper">
+    @for (feedback of feedbacks; track feedback.id) {
+      <app-feedback-item [feedback]="feedback"></app-feedback-item>
+    }
+  </div>
+</body>
