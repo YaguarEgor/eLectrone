@@ -7,7 +7,7 @@
   </div>
 
 
-  <div class="about_us">
+  <div id="about_us" class="about_us">
     <div class="line1">
       <img src="/assets/img_girl_1.png" alt="" class="img">
       <div class="text">
@@ -17,10 +17,40 @@
         </p>
       </div>
     </div>
+
+    <div class="line2">
+      <div class="text">
+        <h1 class="title">Почему именно мы?</h1>
+        <p class="answer">
+          Мы – молодые, веселые и энергичные студенты, как никто другой понимающие, насколько важно уметь отвлечься от учебы, как отойти от зубрежки и правильно распределять время! ЕГЭ для нас еще несколько лет назад - такая же головная боль, как и для вас, поэтому мы понимаем, с какими трудностями вы сталкиваетесь, и что больше всего вас беспокоит в сдаче экзамена.
+        </p>
+      </div>
+      <img src="/assets/img_group.png" alt="" class="img">
+    </div>
+
+    <div class="line3">
+      <img src="/assets/img_laptop.png" alt="" class="img">
+      <div class="text">
+        <h1 class="title">Что есть полезного на сайте?</h1>
+        <p class="answer">
+          Этот сайт – не что иное, как наша собственная «визитка». Мы занимаемся преподавательской деятельностью и решили объединиться для вашего и нашего удобства, чтобы в одном месте можно было найти репетиторов по всем предметам. На этом сайте вы можете узнать не только нашу профессиональную компетенцию, но и то, какими людьми мы являемся!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="tutors" class="tutors">
+    <p class="title">Наши преподаватели</p>
+    <div class="wraper">
+      @for (tutor of tutors; track tutor.id) {
+        <app-tutor-card [tutor]="tutor" [routerLink]="['/tutors', tutor.id]"></app-tutor-card>
+      }
+    </div>
+
   </div>
 
 
-  <div class="feedback_block">
+  <div id="feedbacks" class="feedback_block">
     <p class="title">Отзывы о нас</p>
     <div id="feedbacks" class="wraper">
       @for (feedback of feedbacks; track feedback.id) {
@@ -28,5 +58,7 @@
     }
     </div>
   </div>
+
+  <app-footage></app-footage>
 
 </body>

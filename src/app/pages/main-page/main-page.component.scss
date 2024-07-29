@@ -7,17 +7,18 @@
   background-color: var(--back-color);
 }
 
-.wraper {
+.feedback_block .wraper {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .feedback_block .title {
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 600;
+  font-weight: 550;
   font-size: min(5vw, 40px);
 
   color: var(--help-color);
@@ -27,6 +28,7 @@
 
 .tagline {
   position: relative;
+  margin-top: 40px;
 }
 
 
@@ -47,17 +49,43 @@
 .about_us .line1 {
   display: grid;
   grid-template-columns: 35% 65%;
+  margin-top: -10px;
+}
+
+.about_us .line2 {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  margin-top: -20px;
+}
+
+.about_us .line3 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  margin-top: -20px;
 }
 
 .about_us .line1 .text {
-  margin-right: -10px;
   color: var(--help-color);
   padding: 10%;
   background-color: var(--primary-color);
   border-top-left-radius: 35%;
   border-bottom-left-radius: 35%;
+}
 
-  //border-radius: 35%;
+.about_us .line2 .text {
+  color: var(--help-color);
+  padding: 10%;
+  background-color: var(--primary-color);
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 35%;
+}
+
+.about_us .line3 .text {
+  color: var(--help-color);
+  padding: 10%;
+  background-color: var(--primary-color);
+  border-top-left-radius: 35%;
+  border-bottom-left-radius: 35%;
 }
 
 .about_us .line1 .img {
@@ -66,15 +94,48 @@
   padding-left: 10%;
 }
 
-.about_us .line1 .title {
+.about_us .line2 .img {
+  padding-top: max(35px, 20%);
+  width: min(100%, 400px);
+  padding-right: 5%;
+}
+
+.about_us .line3 .img {
+  padding-top: max(45px, 25%);
+  width: min(100%, 400px);
+  padding-left: 10%;
+}
+
+.about_us .title {
   font-weight: 600;
   font-size: min(3.5vw, 30px);
   text-align: center;
 }
 
-.about_us .line1 .answer {
+.about_us .answer {
   padding-top: 5%;
   font-size: min(3vw, 25px);
+}
+
+.tutors {
+  background-color: var(--help-color);
+  max-height: 600px;
+}
+
+.tutors .wraper {
+  display: flex;
+  overflow-x: scroll;
+
+}
+
+.tutors .title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: min(5vw, 40px);
+
+  color: var(--primary-color);
+  text-align: center;
 }
 
 

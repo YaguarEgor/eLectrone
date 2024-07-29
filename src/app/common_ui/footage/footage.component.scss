@@ -1,0 +1,23 @@
+.app_footage {
+  background-color: var(--footage-back-color);
+  height: 110px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.app_footage .title {
+  padding-top: 10px;
+  font-size: 25px;
+  justify-self: center;
+  font-weight: 650;
+  color: var(--primary-color);
+}
+
+.app_footage .contacts {
+  font-size: 15px;
+  justify-self: center;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--primary-color);
+}

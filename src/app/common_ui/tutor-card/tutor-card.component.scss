@@ -1,0 +1,53 @@
+@media only screen and (max-width: 900px) {
+  .tutor_card {
+    background-color: transparent;
+    height: 200px;
+    width: 150px;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+  }
+
+  .avatar {
+    height: 130px;
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .tutor_card {
+    background-color: transparent;
+    height: 260px;
+    width: 200px;
+    display: grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    padding-bottom: 15px;
+}
+  .avatar {
+    height: 190px;
+    width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+
+.name {
+  color: var(--primary-color);
+  font-weight: 550;
+  text-decoration: none;
+  margin-top: 5px;
+  justify-self: center;
+
+}
+
+.subjects {
+  color: var(--primary-color);
+  margin-left: 25px;
+}
