@@ -1,5 +1,5 @@
 import { ActivatedRoute } from '@angular/router';
-import { GetTutorInfoService } from './../../data/services/get-tutor-info.service';
+import { GetTutorInfoService } from '../../data/services/get-tutor-info.service';
 import { Component, inject } from '@angular/core';
 import { Observable, switchMap } from 'rxjs';
 import { CommonModule, JsonPipe } from '@angular/common';

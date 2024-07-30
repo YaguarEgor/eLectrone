@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { MenuComponent } from './common_ui/menu/menu.component';
@@ -12,5 +13,4 @@ export const routes: Routes = [
         {path: "tutors/:id", component: TutorPageComponent}
     ]},
     {path: "**", component: NotfoundPageComponent},
-
 ];
